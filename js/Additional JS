@@ -1,0 +1,14 @@
+<button onclick="toggleTheme()">Toggle Dark Mode</button>
+
+<script>
+  function toggleTheme() {
+    document.body.classList.toggle("dark-theme");
+  }
+</script>
+
+<style>
+  .dark-theme {
+    background-color: #121212;
+    color: white;
+  }
+</style>
