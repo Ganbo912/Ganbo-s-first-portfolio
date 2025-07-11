@@ -35,24 +35,67 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <style>
+  /* Dark theme styles */
+  body.dark-theme {
+    background-color: #121212 !important;
+    color: #f5f5f5 !important;
+  }
+
+  body.dark-theme h1,
+  body.dark-theme h2,
+  body.dark-theme h3,
+  body.dark-theme p,
+  body.dark-theme span,
+  body.dark-theme li,
+  body.dark-theme a {
+    color: #f5f5f5 !important;
+  }
+
+  body.dark-theme .navmenu {
+    background-color: #1e1e1e;
+  }
+
+  body.dark-theme .section-title,
+  body.dark-theme .skills,
+  body.dark-theme .about,
+  body.dark-theme .contact,
+  body.dark-theme .footer {
+    background-color: #1e1e1e;
+  }
+
+  body.dark-theme .progress-bar-wrap {
+    background-color: #333;
+  }
+
+  body.dark-theme .progress-bar {
+    background-color: #66ccff;
+  }
+
+  .theme-toggle-button {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 9999;
+    background: #eee;
+    border: 1px solid #ccc;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  body.dark-theme .theme-toggle-button {
+    background-color: #333;
+    color: white;
+    border: 1px solid #777;
+  }
+</style>
+  
 </head>
 
 <body class="index-page">
 
-    <button onclick="toggleTheme()" class="btn btn-outline-dark m-3" style="position: fixed; top: 15px; right: 15px; z-index: 9999;">
-      Toggle Dark Mode
-    <script>
-      function toggleTheme() {
-      document.body.classList.toggle("dark-theme");
-    }
-    </script>
-    <style>
-      .dark-theme {
-        background-color: #121212;
-        color: white;
-    }
-    </style>
-      </button>
+<button onclick="toggleTheme()" class="theme-toggle-button">Dark Mode</button>
   
   <header id="header" class="header d-flex flex-column justify-content-center">
     
@@ -397,7 +440,7 @@
 
   <!-- Main JS File -->
   <script src="js/main.js"></script>
-
+  <script src="js/theme.js"></script>
 </body>
 
 </html>
